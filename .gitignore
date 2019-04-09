@@ -2,15 +2,15 @@
 node_modules/
 
 # Generated
-/public
+/dist/
 /assets/js/design/
 /component-library
 *.map.css
 /html/assets/
 
 # Platform
-.sublime-project
+*.sublime-project
+*.sublime-workspace
 .DS_Store
 .vscode
-example.sublime-project
 yarn-error.log

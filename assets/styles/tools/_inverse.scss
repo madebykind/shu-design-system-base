@@ -4,6 +4,9 @@
 // Used to *invert* the colours of a element, essentially blanket covers all children in an element with white colouring
 // ==========================================================================
 
+@import "./link";
+@import "./inverse";
+
 @mixin inverse() {
     // Generic recolour of elements within inversed area
     color: white;

@@ -1,0 +1,12 @@
+@import "design/colours.map";
+@import "design/breakpoints.map";
+@import "design/spacing.map";
+
+@import "tools/palette";
+@import "tools/breakpoint";
+@import "tools/spacing";
+
+// load design tokens into sass
+@include palette-load($colours-map);
+@include breakpoint-load($breakpoints-map);
+@include spacing-load($spacing-map);

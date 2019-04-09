@@ -1,9 +1,0 @@
-// ==========================================================================
-// Inverse Utility
-//
-// Used to invert the colors of a element - docco in `tools/inverse`
-// ==========================================================================
-
-.u-inverse {
-    @include inverse();
-}

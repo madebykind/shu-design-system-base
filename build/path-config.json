@@ -1,0 +1,45 @@
+{
+  "src": "./assets",
+  "dest": "./dist",
+
+  "static": {
+    "src": "static",
+    "dest": "./"
+  },
+
+  "javascripts": {
+    "src": "js",
+    "dest": "js"
+  },
+
+  "stylesheets": {
+    "src": "styles",
+    "dest": "styles"
+  },
+
+  "images": {
+    "src": "images",
+    "dest": "images"
+  },
+
+  "fonts": {
+    "src": "fonts",
+    "dest": "fonts"
+  },
+
+  "icons": {
+    "src": "icons",
+    "dest": "images"
+  },
+
+  "design": {
+    "src": "design",
+    "dest": "design",
+    "files": [
+      "colours.yml",
+      "breakpoints.yml",
+      "fontsizes.yml",
+      "spacing.yml"
+    ]
+  }
+}

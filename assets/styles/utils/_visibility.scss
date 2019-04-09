@@ -5,6 +5,8 @@
 // Utility classes used to show / hide elements
 // ==========================================================================
 
+@import "../tools/hide-print";
+
 // wrapping classes required to match specificity of [1]
 .is--hidden {
     display: none;

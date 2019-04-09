@@ -1,13 +1,11 @@
 // ==========================================================================
-// Trim Utility
+// Inverse Utility
 //
-// Used to trim a specific child element of an element - docco in `tools/trim`
+// Used to invert the colors of a element - docco in `tools/inverse`
 // ==========================================================================
 
-.u-trim {
-    @include trim;
-}
+@import "../tools/inverse";
 
-.u-trim-pad {
-    @include trim-pad;
+.u-inverse {
+    @include inverse();
 }

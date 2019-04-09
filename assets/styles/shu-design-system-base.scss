@@ -1,0 +1,50 @@
+// Design tokens
+@import "design-tokens";
+
+// Always load in tools first
+
+@import "tools";
+
+// load design tokens into sass
+@include palette-load($colours-map);
+@include breakpoint-load($breakpoints-map);
+@include spacing-load($spacing-map);
+
+// @TODO / @TEMP - while we figure out namespacing issue
+@import "normalize";
+
+// Namespacing for the new design system styling
+.shu-design-system-v1-0 {
+
+    // Layout
+    @import "layout";
+
+    // Atoms
+
+    // Un-used base atoms are commented out for now and will be brought in at a later date as and when we need them
+    // They are '_' prefixed within the components directory so they don't render in Fractal
+
+    // @import "atoms/flash-message/flash-message";
+    // @import "atoms/blockquote/blockquote";
+    // @import "atoms/table/table";
+    // @import "atoms/callout/callout";
+
+    @import "atoms";
+
+    // Molecules
+
+    //// Un-used base molecules are commented out for now and will be brought in at a later date as and when we need them
+    // They are '_' prefixed within the components directory so they don't render in Fractal
+
+
+    // Forms
+
+    // Forms are commented out for now as they aren't required at this point
+    // They are '_' prefixed within the components directory so they don't render in Fractal
+
+    // @import "forms";
+
+    // Utilities
+    // Always load utils last as we want thm at the bottom of the stack for priority
+    @import "utils";
+}

@@ -1,19 +1,24 @@
+---
+# @todo add masthead and standard design token intro
 global:
   category: 'Spacing Units'
   type: 'number'
 props:
   half:
-    value: 12
-    comment: 'small'
+    value: 6
+    comment: 'half'
   base:
-    value: 26
+    value: 12
     comment: 'base'
   double:
+    value: 24
+    comment: 'double'
+  triple:
     value: 36
-    comment: 'medium'
-  triple:
+    comment: 'triple'
+  quad:
     value: 48
-    comment: 'large'
-  triple:
-    value: 60
-    comment: 'xlarge'
+    comment: 'quad'
+  oct:
+    value: 96
+    comment: 'oct'

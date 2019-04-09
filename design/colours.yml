@@ -1,22 +1,21 @@
+---
+# @todo add masthead and standard design token intro
 global:
   category: 'Visual'
   type: 'color'
 props:
   black:
-    value: '#000000'
-    comment: 'Pure Black'
+    value: '#333333'
+    comment: 'Project Black'
   white:
     value: '#FFFFFF'
-    comment: 'Pure White'
+    comment: 'Project White'
   grey:
-    value: '#f3f3f4'
-    comment: 'Grey: - Example Usage: Section divider background and dividing lines lines'
-  grey-dark:
-    value: '#333333'
-    comment: 'Grey Dark - Example Usage: Header and footer background'
+    value: '#f7f7f7'
+    comment: 'Grey: Generally used for backgrounds'
   primary:
-    value: '#178cff'
-    comment: 'Primary blue: - Example Usage: Used as primary link colour and CTA quick edit bar'
+    value: '#ba0046'
+    comment: 'Primary: (Dark Pink) Used for primary elements such as buttons'
   secondary:
-    value: '#ff6700'
-    comment: 'Secondary orange: - Example Usage: Case study label''
+    value: '#691641'
+    comment: 'Secondary: (Darker Pink) Used for secondary elements such as buttons'
