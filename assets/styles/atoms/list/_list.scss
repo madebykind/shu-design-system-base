@@ -77,14 +77,24 @@ ul {
     @include list--bullet;
 }
 
-.list--unstyled {
+@mixin list-unstyled {
+    list-style: none;
+    margin: 0;
+    @include respond-to(medium) {
+        margin: 0;
+    }
     li {
         padding-left: 0;
+        margin-bottom: 0;
         &:before,
         &:after {
             display: none;
         }
     }
+}
+
+.list--unstyled {
+    @include list-unstyled();
 }
 
 .list--css-col {
