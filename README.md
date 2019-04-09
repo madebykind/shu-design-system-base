@@ -11,3 +11,11 @@ This project uses the following:
 5. [Blendid](https://github.com/vigetlabs/blendid) build task tool and asset pipeline
 6. [Yarn](https://yarnpkg.com/lang/en/) for dependency management 
 7. [git-flow](https://github.com/nvie/gitflow) for Git branching model
+
+
+# Publish workflow
+
+```bash
+npm version (patch|minor|major)
+npm publish
+```
