@@ -13,10 +13,6 @@
         "generate-styleguide": "yarn build && fractal build",
         "prepublish": "yarn run build && yarn generate-styleguide"
     },
-    "files": [
-        "dist",
-        "component-library"
-    ],
     "dependencies": {
         "breakpoint-sass": "^2.7.1",
         "enquire.js": "^2.1.6",
