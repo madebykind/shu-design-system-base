@@ -4,3 +4,15 @@ status: "ready"
 context:
   pill:
     message: Pill Example
+
+variants:
+  -
+    name: Secondary
+    context:
+      pill:
+        modifier: pill--secondary
+  -
+    name: Grey
+    context:
+      pill:
+        modifier: pill--grey

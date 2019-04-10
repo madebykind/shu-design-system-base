@@ -18,3 +18,9 @@ variants:
       meta:
         message: Meta Text (Tight)
         modifier: meta--tight
+  -
+    name: grey
+    context:
+      meta:
+        message: Meta Text (Grey)
+        modifier: meta--grey

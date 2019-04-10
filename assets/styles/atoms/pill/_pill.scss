@@ -3,11 +3,16 @@
 // ==========================================================================
 
 .pill {
-    border-radius: rem-calc(30);
-    font-size: ms(-1);
-    padding: spacing(9 15);
-    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    line-height: 1.44;
+    border-radius: rem-calc(5);
+    font-size: ms(-3);
+    padding: spacing(5 12);
+    margin-bottom: spacing(5);
+    font-family: "stolzl", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
 
     @include link() {
         background: palette(primary);
@@ -19,5 +24,26 @@
 
     @include link-hover {
         background: tint(palette(primary), "darken");
+    }
+}
+
+.pill--secondary {
+    @include link() {
+        background: palette(secondary);
+    }
+
+    @include link-hover {
+        background: tint(palette(secondary), "darken");
+    }
+}
+
+.pill--grey {
+    @include link() {
+        background: tint(palette(grey), "darken");
+        color: black;
+    }
+
+    @include link-hover {
+        background: tint(palette(grey), "darken", 2);
     }
 }

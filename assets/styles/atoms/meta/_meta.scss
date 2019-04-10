@@ -48,6 +48,22 @@
     }
 }
 
+.meta--grey {
+    &,
+    & > a {
+        color: tint(palette(grey), "darken", 5);
+    }
+
+    > a {
+        @include link() {
+            color: tint(palette(grey), "darken", 5);
+        }
+        @include link-hover() {
+            color: tint(palette(grey), "darken", 6);
+        }
+    }
+}
+
 
 .meta--tight {
     letter-spacing: rem-calc(1);
