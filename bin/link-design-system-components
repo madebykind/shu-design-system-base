@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+require("colors");
+
+const fs = require('fs');
+const path = require('path');
+const dsPathConfig = require('../build/path-config.json');
+const localPathConfig = require(path.resolve(process.cwd(), 'build/path-config.json'));
+
+const dsStylesPath = path.resolve(__dirname, '..', dsPathConfig.src, dsPathConfig.stylesheets.src);
+const localStylesPath = path.resolve(process.cwd(), localPathConfig.src, localPathConfig.stylesheets.src);
+
+const dsAtomsPath = path.resolve(dsStylesPath, 'atoms');
+const localAtomsPath = path.resolve(localStylesPath, 'atoms/imported');
+
+fs.mkdirSync(localAtomsPath);
+
+
+fs.readdir(dsAtomsPath, { withFileTypes: true }, (err, atoms) => {
+    if (err) {
+        throw err
+    };
+    atoms.forEach(function(atom){
+        const sourcePath = path.resolve(dsAtomsPath, atom.name);
+        const targetPath = path.resolve(localAtomsPath, atom.name);
+        if (atom.isDirectory()) {
+            if (fs.existsSync(targetPath)) {
+                console.warn(`Not linking`, `${atom.name}`.red, `as ${targetPath} already exists`);
+            } else {
+                console.log(`Linking`, `${atom.name}`.green,  ` atom to ${targetPath}`);
+
+                fs.symlink(sourcePath, targetPath, (err) => { throw err });
+            }
+        }
+    });
+});
+
