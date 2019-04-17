@@ -11,8 +11,8 @@ form {
         border: 2px solid tint(palette(grey), "darken");
         border-radius: rem-calc(3);
         padding: spacing(15 50 15 15);
-        color: tint(palette(grey), "darken", 4);
-        min-width: rem-calc(300);
+        // color: tint(palette(grey), "darken", 4);
+        // min-width: rem-calc(300);
     }
 
     .input--search {
