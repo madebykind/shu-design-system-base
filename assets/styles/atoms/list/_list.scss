@@ -97,6 +97,16 @@ ul {
     @include list-unstyled();
 }
 
+.list--inset {
+    padding-left: spacing(15);
+}
+
+.list-inset-wrap {
+    & > ul {
+        padding-left: spacing(15);
+    }
+}
+
 .list--css-col {
     margin: 0;
     columns: 1;
