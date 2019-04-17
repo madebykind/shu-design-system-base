@@ -93,6 +93,18 @@
     display: block;
 }
 
+.btn__prospectus-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 17px;
+    width: 21px;
+    margin-right: 7px;
+    background-image: url(https://www.shu.ac.uk/assets/images/icons/book.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 // Modifier for disabled buttons
 .is--disabled {
     opacity: 0.15;
