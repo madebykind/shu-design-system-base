@@ -26,4 +26,7 @@
     .island--#{$color}.island--bordered {
         border-bottom: rem-calc(2) solid tint($value, "darken");
     }
+    .island--#{$color}.island--bordered-full {
+        border: rem-calc(2) solid tint($value, "darken");
+    }
 }
