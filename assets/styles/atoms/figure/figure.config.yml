@@ -5,3 +5,10 @@ context:
     figure:
         image: https://picsum.photos/600/350
         caption: Sheffields independent movement
+
+variants:
+  -
+    name: Figure no page
+    context:
+      figure:
+        modifier: 'figure--no-space'

@@ -21,4 +21,16 @@ figcaption {
 
 .figure--no-space {
     margin: spacing(0);
+
+    & > img {
+        margin: spacing(0);
+        padding: spacing(0);
+        display: block;
+    }
+}
+
+.figure--no-round {
+    & > img {
+        border-radius: 0px;
+    }
 }
