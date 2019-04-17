@@ -74,6 +74,13 @@
     @include chevron-primary;
 }
 
+// Black forced chevron
+.chevron--black {
+    &:before {
+        border-color: black;
+    }
+}
+
 // White coloured Chevron modifier
 .chevron--white {
     @include chevron-white;
