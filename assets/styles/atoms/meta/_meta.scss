@@ -64,7 +64,38 @@
     }
 }
 
-
 .meta--tight {
     letter-spacing: rem-calc(1);
+}
+
+.meta--status {
+    color: black;
+
+    &:before {
+        content: ' ';
+        width: rem-calc(10);
+        height: rem-calc(10);
+        margin-right: rem-calc(10);
+        background: black;
+        border-radius: 100%;
+        display: inline-block;
+    }
+}
+
+.meta--status--green {
+    &:before {
+        background: #75B44A;
+    }
+}
+
+.meta--status--blue {
+    &:before {
+        background: #174B66;
+    }
+}
+
+.meta--status--red {
+    &:before {
+        background: #F2343F;
+    }
 }
