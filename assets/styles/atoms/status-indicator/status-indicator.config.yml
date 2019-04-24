@@ -1,0 +1,14 @@
+title: "Status Indicator"
+status: "ready"
+
+variants:
+  -
+    name: green
+    context:
+      statusIndicator:
+        modifier: status-indicator--green
+  -
+    name: red
+    context:
+      statusIndicator:
+        modifier: status-indicator--red

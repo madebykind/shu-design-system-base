@@ -5,7 +5,7 @@
 .pill {
     border-radius: rem-calc(5);
     font-size: 10px;
-    padding: spacing(5 12);
+    padding: spacing(5 10 5 12);
     margin-bottom: spacing(5);
     font-family: "stolzl", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     line-height: 1.2;
@@ -14,6 +14,7 @@
     letter-spacing: 5px;
     text-align: center;
 
+    // @TODO show a pseudo scenario of a non-link and double check it all
     @include link() {
         background: palette(primary);
         color: white;
@@ -22,6 +23,7 @@
         transition: all ease 150ms;
     }
 
+    // @TODO only work when a or button
     @include link-hover {
         background: tint(palette(primary), "darken");
     }
