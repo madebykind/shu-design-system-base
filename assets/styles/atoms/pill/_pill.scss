@@ -14,7 +14,6 @@
     letter-spacing: 5px;
     text-align: center;
 
-    // @TODO show a pseudo scenario of a non-link and double check it all
     @include link() {
         background: palette(primary);
         color: white;
@@ -22,7 +21,10 @@
         text-decoration: none;
         transition: all ease 150ms;
     }
+}
 
+a.pill,
+button.pill {
     // @TODO only work when a or button
     @include link-hover {
         background: tint(palette(primary), "darken");
@@ -33,7 +35,10 @@
     @include link() {
         background: palette(secondary);
     }
+}
 
+a.pill--secondary,
+button.pill--secondary {
     @include link-hover {
         background: tint(palette(secondary), "darken");
     }
@@ -44,7 +49,10 @@
         background: tint(palette(grey), "darken");
         color: black;
     }
+}
 
+a.pill--grey,
+button.pill--grey {
     @include link-hover {
         background: tint(palette(grey), "darken", 2);
     }
@@ -55,7 +63,10 @@
         background: black;
         color: white;
     }
+}
 
+a.pill--black,
+button.pill--black {
     @include link-hover {
         background: tint(black, "lighten", 2);
     }
