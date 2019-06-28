@@ -18,6 +18,14 @@
     z-index: 100;
 }
 
+.is--fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
 .is--fixed {
     position: fixed;
     top: 0px;
