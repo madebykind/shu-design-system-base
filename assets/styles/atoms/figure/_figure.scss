@@ -34,3 +34,12 @@ figcaption {
         border-radius: 0px;
     }
 }
+
+.figure--round\@large {
+    @include respond-to(large) {
+        & > img {
+            border-radius: rem-calc(5);
+        }
+    }
+}
+
