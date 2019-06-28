@@ -19,11 +19,12 @@
         text-decoration: none;
         border: rem-calc(2) solid palette(black);
         background: none;
+        background-color: white;
         color: palette(black);
     }
 
     @include link-hover() {
-        border: 2px solid palette(primary);
+        border: rem-calc(2) solid palette(primary);
         color: palette(primary);
     }
 }
