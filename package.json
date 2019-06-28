@@ -1,6 +1,6 @@
 {
     "name": "shu-frontend-design-system",
-    "version": "2.5.1",
+    "version": "2.6.0",
     "description": "Front end assets for the SHU design system",
     "main": "scss/index.scss",
     "repository": "git@github.com:madebykind/shu-design-system-base.git",
