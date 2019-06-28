@@ -17,13 +17,13 @@ $_wrapper-padding: 30;
     padding-left: rem-calc($_wrapper-padding / 2);
     padding-right: rem-calc($_wrapper-padding / 2);
 
+    width: 100%;
+    max-width: rem-calc($_wrapper-max-width);
+
     @include respond-to(medium) {
         padding-left: rem-calc($_wrapper-padding);
         padding-right: rem-calc($_wrapper-padding);
     }
-
-    width: 100%;
-    max-width: rem-calc($_wrapper-max-width);
 }
 
 .wrapper--bleed {
@@ -35,5 +35,26 @@ $_wrapper-padding: 30;
         max-width: rem-calc($_wrapper-max-width);
         padding-left: rem-calc($_wrapper-padding);
         padding-right: rem-calc($_wrapper-padding);
+    }
+}
+
+.wrapper\@large {
+
+    @include respond-to(large) {
+        margin: 0 auto;
+        clear: both;
+        position: relative;
+        max-width: rem-calc($_wrapper-max-width);
+        padding-left: rem-calc($_wrapper-padding);
+        padding-right: rem-calc($_wrapper-padding);
+    }
+}
+
+
+.no-wrapper\@large {
+    @include respond-to(large) {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
     }
 }
