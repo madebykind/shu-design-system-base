@@ -1,8 +1,11 @@
 // ==========================================================================
 // Pill Atom
 // ==========================================================================
+@import "../close/_close";
+
 
 .pill {
+    position: relative;
     border-radius: rem-calc(5);
     font-size: 10px;
     padding: spacing(5 10 5 12);
@@ -69,5 +72,25 @@ a.pill--black,
 button.pill--black {
     @include link-hover {
         background: tint(black, "lighten", 2);
+    }
+}
+
+.pill--icon-right {
+    padding-right: spacing(22);
+}
+
+.pill__close {
+    @include close();
+    width: rem-calc(10);
+    height: rem-calc(10);
+    vertical-align: text-top;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    margin-top: -7px;
+    &:before,
+    &:after {
+        height: rem-calc(10);
+        width: rem-calc(2);
     }
 }
