@@ -7527,10 +7527,10 @@ modify-filename@^1.0.0, modify-filename@^1.1.0:
   resolved "https://registry.yarnpkg.com/modify-filename/-/modify-filename-1.1.0.tgz#9a2dec83806fbb2d975f22beec859ca26b393aa1"
   integrity sha1-mi3sg4Bvuy2XXyK+7IWcoms5OqE=
 
-modularscale-sass@^3.0.5:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/modularscale-sass/-/modularscale-sass-3.0.8.tgz#57c92ee0750f6807e37359699ef2ce63a4997db6"
-  integrity sha512-NOO6NLXPiVG8T/ZkXImxSj1YtvzF37suAGxc9ty0pmQrU998fmJqR6kNqs+HmFqOjeCRJ3roBfA9Arohta2sBQ==
+modularscale-sass@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/modularscale-sass/-/modularscale-sass-3.0.5.tgz#18847c3ae4fc506b7dfab0c0df3b398663c97b5f"
+  integrity sha512-I6P3GKSUUa4Z8atzXaw9pBJZLMzelY/fkyN2M+4cwc4aMdt79ROA51wlGEJQ+F3EysJlwoxHR2SpkloS/TgjAA==
 
 moment@^2.18.1:
   version "2.24.0"

@@ -23,7 +23,7 @@
         "enquire.js": "^2.1.6",
         "inquirer": "^6.2.2",
         "jsonfile": "^5.0.0",
-        "modularscale-sass": "^3.0.5",
+        "modularscale-sass": "3.0.5",
         "shelljs": "^0.8.3"
     },
     "devDependencies": {
