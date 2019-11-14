@@ -7,6 +7,12 @@ context:
 
 variants:
   -
+    name: featured
+    context:
+      meta:
+        message: Meta Text (Featured)
+        modifier: meta--featured
+  -
     name: highlight
     context:
       meta:
