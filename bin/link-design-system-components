@@ -12,7 +12,7 @@ const localStylesPath = path.resolve(process.cwd(), localPathConfig.src, localPa
 const dsAtomsPath = path.resolve(dsStylesPath, 'atoms');
 const localAtomsPath = path.resolve(localStylesPath, 'atoms/imported');
 
-fs.mkdirSync(localAtomsPath);
+fs.mkdirSync(localAtomsPath, { recursive: true });
 
 
 fs.readdir(dsAtomsPath, { withFileTypes: true }, (err, atoms) => {
