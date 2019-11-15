@@ -2,6 +2,18 @@
 //  Layout Alignment
 // ==========================================================================
 
+.align-apart {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.align-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
 .align-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;

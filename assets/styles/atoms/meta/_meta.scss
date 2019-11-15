@@ -31,6 +31,11 @@
     }
 }
 
+// Featured meta is slightly larger for added prominence
+.meta--featured {
+    font-size: ms(-2);
+}
+
 // 'Highlight' modifier, essentially a more prominant meta, can often paired with standard 'meta' for nice headings etc
 .meta--highlight {
     &,
