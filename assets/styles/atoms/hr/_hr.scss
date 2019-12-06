@@ -3,7 +3,7 @@
 // ==========================================================================
 
 hr, .hr {
-    border-top: rem-calc(2) solid palette(grey);
+    border-top: rem-calc(2) solid palette("grey");
     border-bottom: 0;
     box-sizing: content-box;
     height: 0;
@@ -20,5 +20,5 @@ hr, .hr {
 }
 
 .hr--dark {
-    border-top: rem-calc(2) solid tint(palette(grey), "darken");
+    border-top: rem-calc(2) solid tint(palette("grey"), "darken");
 }

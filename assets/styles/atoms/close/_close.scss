@@ -15,7 +15,7 @@
         content: ' ';
         height: rem-calc(30);
         width: rem-calc(2);
-        background-color: palette(black);
+        background-color: palette("black");
     }
 
     &:before {
@@ -28,7 +28,7 @@
 
     &:hover {
         &:before, &:after {
-            background-color: palette(primary);
+            background-color: palette("primary");
         }
     }
 }
@@ -48,7 +48,7 @@
         content: ' ';
         height: rem-calc(15);
         width: rem-calc(2);
-        background-color: palette(white);
+        background-color: palette("white");
     }
 
     &:before {
@@ -61,7 +61,7 @@
 
     &:hover {
         &:before, &:after {
-            background-color: palette(white);
+            background-color: palette("white");
         }
     }
 }

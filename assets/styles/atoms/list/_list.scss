@@ -41,7 +41,7 @@
         //     width: 4px;
         //     height: 4px;
         //     border-radius: 100%;
-        //     background-color: palette(black);
+        //     background-color: palette("black");
         // }
     }
 }
@@ -61,7 +61,7 @@
         //     left: 0;
         //     counter-increment: list;
         //     content: counters(list, ".") ".";
-        //     color: palette(black);
+        //     color: palette("black");
         //     margin-right: rem-calc(12);
         //     font-size: ms(-1);
         // }

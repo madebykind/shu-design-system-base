@@ -9,7 +9,7 @@ table {
 }
 
 table {
-    border: 1px solid darken(palette(grey), 5%);
+    border: 1px solid darken(palette("grey"), 5%);
     width: 100%;
     max-width: 100%;
     margin: spacing(base 0);
@@ -22,11 +22,11 @@ table {
             > td {
                 padding: rem-calc(16);
                 vertical-align: top;
-                border-top: 1px solid darken(palette(grey), 5%);
+                border-top: 1px solid darken(palette("grey"), 5%);
 
                 @include respond-to(medium) {
-                    border-left: 1px solid darken(palette(grey), 5%);
-                    border-right: 1px solid darken(palette(grey), 5%);
+                    border-left: 1px solid darken(palette("grey"), 5%);
+                    border-right: 1px solid darken(palette("grey"), 5%);
                 }
 
                 &:nth-of-type(odd) {
@@ -41,7 +41,7 @@ table {
     }
 
     > thead > tr {
-        background: palette(grey);
+        background: palette("grey");
 
         > th {
             vertical-align: bottom;
@@ -50,8 +50,8 @@ table {
     }
 
     > tfoot > tr {
-        border-top: 1px solid darken(palette(grey), 5%);
-        background: palette(grey);
+        border-top: 1px solid darken(palette("grey"), 5%);
+        background: palette("grey");
 
         > td {
             vertical-align: bottom;
@@ -63,7 +63,7 @@ table {
 
     tr {
         &:nth-of-type(even) {
-            background: palette(grey);
+            background: palette("grey");
 
             @include respond-to(medium) {
                 background: none;

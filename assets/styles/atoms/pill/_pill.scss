@@ -18,7 +18,7 @@
     text-align: center;
 
     @include link() {
-        background: palette(primary);
+        background: palette("primary");
         color: white;
         display: inline-block;
         text-decoration: none;
@@ -30,26 +30,26 @@ a.pill,
 button.pill {
     // @TODO only work when a or button
     @include link-hover {
-        background: tint(palette(primary), "darken");
+        background: tint(palette("primary"), "darken");
     }
 }
 
 .pill--secondary {
     @include link() {
-        background: palette(secondary);
+        background: palette("secondary");
     }
 }
 
 a.pill--secondary,
 button.pill--secondary {
     @include link-hover {
-        background: tint(palette(secondary), "darken");
+        background: tint(palette("secondary"), "darken");
     }
 }
 
 .pill--grey {
     @include link() {
-        background: tint(palette(grey), "darken");
+        background: tint(palette("grey"), "darken");
         color: black;
     }
 }
@@ -57,7 +57,7 @@ button.pill--secondary {
 a.pill--grey,
 button.pill--grey {
     @include link-hover {
-        background: tint(palette(grey), "darken", 2);
+        background: tint(palette("grey"), "darken", 2);
     }
 }
 

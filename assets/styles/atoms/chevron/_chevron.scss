@@ -19,7 +19,7 @@
 
 @mixin chevron-primary {
     &:before {
-        border-color: palette(primary);
+        border-color: palette("primary");
     }
 }
 

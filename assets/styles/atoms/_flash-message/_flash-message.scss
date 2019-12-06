@@ -4,7 +4,7 @@
 
 .flash-message {
     padding: spacing(9 15 9 15);
-    background: palette(primary);
+    background: palette("primary");
     color: white;
     position: fixed;
     top: 0;
@@ -33,30 +33,30 @@
     position: relative;
 
     &:before, &:after {
-        background-color: palette(white);
+        background-color: palette("white");
     }
 
     &:hover {
         // Tint the background of the icon for hover
         &:before, &:after {
-            background-color: tint(palette(white), 'darken');
+            background-color: tint(palette("white"), 'darken');
         }
     }
 }
 
 // Success modifier
 .flash-message--success {
-    background: palette(success);
+    background: palette("success");
 }
 
 // Warning modifier
 .flash-message--warning {
-    background: palette(warning);
+    background: palette("warning");
 }
 
 // Error modifier
 .flash-message--error {
-    background: palette(error);
+    background: palette("error");
 }
 
 // Bottom mofifier, for messages you want to display at the bottom of the screen instead of default top
