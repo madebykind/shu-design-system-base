@@ -13,7 +13,7 @@
     $width: 20px,
     $height: 3px,
     $gutter: 3px,
-    $color: palette(primary),
+    $color: palette("primary"),
     $transition-duration: 250ms) {
 
     $burger-height: $height !global;
@@ -84,7 +84,7 @@
 .burger__text {
     font-size: ms(-1);
     font-weight: bold;
-    color: palette(primary);
+    color: palette("primary");
     padding-left: spacing(5);
 }
 
@@ -96,7 +96,7 @@
 // Init the burger icon active state
 
 .burger.is--active {
-    background: palette(secondary);
+    background: palette("secondary");
     &:focus {
         outline: none;
         background-color: palette('primary');

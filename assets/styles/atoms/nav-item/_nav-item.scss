@@ -9,15 +9,15 @@
         font-size: ms(0);
         font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
         line-height: 1.66;
-        color: palette(black);
+        color: palette("black");
         text-decoration: none;
         font-weight: 700;
     }
 
     &:hover {
-        color: palette(primary);
+        color: palette("primary");
         &:focus {
-            color: palette(black);
+            color: palette("black");
         }
     }
     &:focus {
@@ -33,30 +33,30 @@
 // Primary colour modifier
 .nav-item--primary {
     @include link() {
-        color: palette(primary);
+        color: palette("primary");
     }
 
     &:hover {
-        color: tint(palette(primary), "darken");
+        color: tint(palette("primary"), "darken");
     }
 }
 
 // Primary colour modifier
 .nav-item--white {
     @include link() {
-        color: palette(white);
+        color: palette("white");
     }
 
     &:hover {
-        color: tint(palette(white), "darken");
+        color: tint(palette("white"), "darken");
     }
 }
 
 .nav-item--fancy-active {
     &.is--active {
         @include link() {
-            background: palette(white);
-            color: palette(primary) !important;
+            background: palette("white");
+            color: palette("primary") !important;
             border-radius: rem-calc(3);
         }
     }

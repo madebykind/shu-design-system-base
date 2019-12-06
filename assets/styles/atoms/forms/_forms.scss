@@ -8,10 +8,10 @@ form {
     display: block;
 
     .input {
-        border: 2px solid tint(palette(grey), "darken");
+        border: 2px solid tint(palette("grey"), "darken");
         border-radius: rem-calc(3);
         padding: spacing(15 50 11 15);
-        // color: tint(palette(grey), "darken", 4);
+        // color: tint(palette("grey"), "darken", 4);
         // min-width: rem-calc(300);
     }
 

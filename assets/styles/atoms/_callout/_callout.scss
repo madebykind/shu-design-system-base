@@ -7,7 +7,7 @@
     @include trim();
     margin: spacing(base 0);
     padding: spacing(base);
-    background: palette(grey);
+    background: palette("grey");
 
     @include respond-to(medium) {
         padding: spacing(double);

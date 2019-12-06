@@ -8,15 +8,15 @@ a,
     @include link() {
         text-decoration: underline;
         text-decoration-skip: ink;
-        color: palette(primary);
+        color: palette("primary");
     }
 
     @include link-hover() {
-        color: tint(palette(primary), "darken");
+        color: tint(palette("primary"), "darken");
     }
 
     &:focus {
-        outline: 1px dotted palette(black);
+        outline: 1px dotted palette("black");
     }
 
     &:active {
@@ -41,7 +41,7 @@ a,
 
 .link--black {
     @include link() {
-        color: palette(black);
+        color: palette("black");
     }
 
     @include link-hover() {

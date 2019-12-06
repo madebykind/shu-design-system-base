@@ -15,17 +15,17 @@
     // Color any element within the meta-title
     &,
     & > a {
-        color: palette(black);
+        color: palette("black");
     }
 
     // Link styling within meta-title
     > a {
         @include link() {
-            color: palette(black);
+            color: palette("black");
             text-decoration: none;
         }
         @include link-hover() {
-            color: palette(black);
+            color: palette("black");
             text-decoration: underline;
         }
     }
@@ -40,15 +40,15 @@
 .meta--highlight {
     &,
     & > a {
-        color: tint(palette(primary), "darken");
+        color: tint(palette("primary"), "darken");
     }
 
     > a {
         @include link() {
-            color: tint(palette(primary), "darken");
+            color: tint(palette("primary"), "darken");
         }
         @include link-hover() {
-            color: tint(palette(primary), "darken");
+            color: tint(palette("primary"), "darken");
         }
     }
 }
@@ -56,15 +56,15 @@
 .meta--grey {
     &,
     & > a {
-        color: tint(palette(grey), "darken", 5);
+        color: tint(palette("grey"), "darken", 5);
     }
 
     > a {
         @include link() {
-            color: tint(palette(grey), "darken", 5);
+            color: tint(palette("grey"), "darken", 5);
         }
         @include link-hover() {
-            color: tint(palette(grey), "darken", 6);
+            color: tint(palette("grey"), "darken", 6);
         }
     }
 }
