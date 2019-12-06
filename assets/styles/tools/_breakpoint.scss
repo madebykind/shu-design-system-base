@@ -5,7 +5,7 @@
 // Used to attribute media queries from the breakpoint design token
 // *Important* - Remember to load this after including (main.scss) - default usage - @include breakpoint-load($breakpoints-map);
 
-@import "breakpoint-sass/stylesheets/breakpoint";
+@import "~breakpoint-sass/stylesheets/breakpoint";
 
 @mixin breakpoint-load($breakpoints) {
     // use ems as the unit when outputting media queries
