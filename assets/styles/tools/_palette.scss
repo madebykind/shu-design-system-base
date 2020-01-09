@@ -17,7 +17,6 @@ $__palette: () !default  !global;
 
 @function palette($color) {
     $color: quote($color);
-
     @return map-get-if-exists($__palette, $color);
 }
 

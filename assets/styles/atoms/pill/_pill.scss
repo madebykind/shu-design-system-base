@@ -5,92 +5,94 @@
 
 
 .pill {
-    position: relative;
-    border-radius: rem-calc(5);
-    font-size: 10px;
-    padding: spacing(5 10 5 12);
-    margin-bottom: spacing(5);
-    font-family: "stolzl", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    line-height: 1.2;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-align: center;
+  position: relative;
+  padding: spacing(5 10 5 12);
+  margin-bottom: spacing(5);
+  border-radius: rem-calc(5);
+  font-family: "stolzl", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
 
-    @include link() {
-        background: palette("primary");
-        color: white;
-        display: inline-block;
-        text-decoration: none;
-        transition: all ease 150ms;
-    }
+  @include link() {
+    display: inline-block;
+    background: palette("primary");
+    color: white;
+    text-decoration: none;
+    transition: all ease 150ms;
+  }
 }
 
 a.pill,
 button.pill {
-    // @TODO only work when a or button
-    @include link-hover {
-        background: tint(palette("primary"), "darken");
-    }
+  // @TODO only work when a or button
+  @include link-hover {
+    background: tint(palette("primary"), "darken");
+  }
 }
 
 .pill--secondary {
-    @include link() {
-        background: palette("secondary");
-    }
+  @include link() {
+    background: palette("secondary");
+  }
 }
 
 a.pill--secondary,
 button.pill--secondary {
-    @include link-hover {
-        background: tint(palette("secondary"), "darken");
-    }
+  @include link-hover {
+    background: tint(palette("secondary"), "darken");
+  }
 }
 
 .pill--grey {
-    @include link() {
-        background: tint(palette("grey"), "darken");
-        color: black;
-    }
+  @include link() {
+    background: tint(palette("grey"), "darken");
+    color: black;
+  }
 }
 
 a.pill--grey,
 button.pill--grey {
-    @include link-hover {
-        background: tint(palette("grey"), "darken", 2);
-    }
+  @include link-hover {
+    background: tint(palette("grey"), "darken", 2);
+  }
 }
 
 .pill--black {
-    @include link() {
-        background: black;
-        color: white;
-    }
+  @include link() {
+    background: black;
+    color: white;
+  }
 }
 
 a.pill--black,
 button.pill--black {
-    @include link-hover {
-        background: tint(black, "lighten", 2);
-    }
+  @include link-hover {
+    background: tint(black, "lighten", 2);
+  }
 }
 
 .pill--icon-right {
-    padding-right: spacing(22);
+  padding-right: spacing(22);
 }
 
 .pill__close {
-    @include close();
-    width: rem-calc(10);
+  @include close();
+
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: rem-calc(10);
+  height: rem-calc(10);
+  margin-top: -7px;
+  vertical-align: text-top;
+
+  &::before,
+  &::after {
+    width: rem-calc(2);
     height: rem-calc(10);
-    vertical-align: text-top;
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    margin-top: -7px;
-    &:before,
-    &:after {
-        height: rem-calc(10);
-        width: rem-calc(2);
-    }
+  }
 }

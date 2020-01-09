@@ -4,43 +4,44 @@
 
 figure,
 .figure {
-    display: block;
-    margin: spacing(25 0);
+  display: block;
+  margin: spacing(25 0);
 
-    img, .video {
-        width: 100%;
-        margin-bottom: spacing(10);
-        border-radius: rem-calc(5);
-    }
+  img,
+  .video {
+    width: 100%;
+    margin-bottom: spacing(10);
+    border-radius: rem-calc(5);
+  }
 }
 
 figcaption {
-    // Trim the callout so the last child doesn't have spacing bottom
-    font-style: normal;
-    font-size: ms(-3);
+  font-size: ms(-3);
+  // Trim the callout so the last child doesn't have spacing bottom
+  font-style: normal;
 }
 
 .figure--no-space {
-    margin: spacing(0);
+  margin: spacing(0);
 
-    & > img {
-        // margin: spacing(0);
-        // padding: spacing(0);
-        // display: block;
-    }
+  & > img {
+    // margin: spacing(0);
+    // padding: spacing(0);
+    // display: block;
+  }
 }
 
 .figure--no-round {
-    & > img {
-        border-radius: 0px;
-    }
+  & > img {
+    border-radius: 0;
+  }
 }
 
 .figure--round\@large {
-    @include respond-to(large) {
-        & > img {
-            border-radius: rem-calc(5);
-        }
+  @include respond-to(large) {
+    & > img {
+      border-radius: rem-calc(5);
     }
+  }
 }
 

@@ -4,141 +4,146 @@
 
 // The base list styles
 %list-base {
-    margin: 0 0 1em 0.5em;
-    // list-style: none;
-    line-height: 1.44;
+  padding-left: 0;
+  margin: 0 0 1em 0.5em;
+  font-size: ms(0);
+  // list-style: none;
+  line-height: 1.44;
+
+  @include respond-to(medium) {
+    margin: 0 0 1em 1em;
+  }
+
+  li {
+    margin-bottom: 0.5em;
     font-size: ms(0);
-    padding-left: 0;
-
-    @include respond-to(medium) {
-        margin: 0 0 1em 1em;
-    }
-
-    li {
-        margin-bottom: 0.5em;
-        font-size: ms(0);
-    }
+  }
 }
 
 @mixin list--bullet {
-    // Extend the base list styles set above
-    @extend %list-base;
-    list-style-position: outside;
+  // Extend the base list styles set above
+  @extend %list-base;
 
-    li {
-        padding-left: rem-calc(15);
-        position: relative;
+  list-style-position: outside;
 
-        // Create and position the bullet from the before psuedo element
-        // &:before {
-        //     position: absolute;
-        //     top: rem-calc(10);
-        //     left: 0;
-        //     display: block;
-        //     margin-bottom: rem-calc(4);
-        //     margin-right: rem-calc(8);
-        //     content: " ";
-        //     width: 4px;
-        //     height: 4px;
-        //     border-radius: 100%;
-        //     background-color: palette("black");
-        // }
-    }
+  li {
+    position: relative;
+    padding-left: rem-calc(15);
+
+    // Create and position the bullet from the before psuedo element
+    // &:before {
+    //     position: absolute;
+    //     top: rem-calc(10);
+    //     left: 0;
+    //     display: block;
+    //     margin-bottom: rem-calc(4);
+    //     margin-right: rem-calc(8);
+    //     content: " ";
+    //     width: 4px;
+    //     height: 4px;
+    //     border-radius: 100%;
+    //     background-color: palette("black");
+    // }
+  }
 }
 
 @mixin list--numbered {
-    @extend %list-base;
+  @extend %list-base;
+
+  counter-reset: list;
+
+  li {
+    position: relative;
+    padding-left: rem-calc(15);
+
+    // Create and position the counter from the before psuedo element
+    // &:before {
+    //     position: absolute;
+    //     top: rem-calc(4);
+    //     left: 0;
+    //     counter-increment: list;
+    //     content: counters(list, ".") ".";
+    //     color: palette("black");
+    //     margin-right: rem-calc(12);
+    //     font-size: ms(-1);
+    // }
+  }
+
+  ol {
+    // Reset the counter for nested ol's
     counter-reset: list;
-
-    li {
-        padding-left: rem-calc(15);
-        position: relative;
-
-        // Create and position the counter from the before psuedo element
-        // &:before {
-        //     position: absolute;
-        //     top: rem-calc(4);
-        //     left: 0;
-        //     counter-increment: list;
-        //     content: counters(list, ".") ".";
-        //     color: palette("black");
-        //     margin-right: rem-calc(12);
-        //     font-size: ms(-1);
-        // }
-    }
-
-    ol {
-        // Reset the counter for nested ol's
-        counter-reset: list;
-    }
+  }
 }
 
 ul {
-    @include list--bullet;
+  @include list--bullet;
 }
 
 @mixin list-unstyled {
-    list-style: none;
+  margin: 0;
+  list-style: none;
+
+  @include respond-to(medium) {
     margin: 0;
-    @include respond-to(medium) {
-        margin: 0;
+  }
+
+  li {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &::before,
+    &::after {
+      display: none;
     }
-    li {
-        padding-left: 0;
-        margin-bottom: 0;
-        &:before,
-        &:after {
-            display: none;
-        }
-    }
+  }
 }
 
 .list--unstyled {
-    @include list-unstyled();
+  @include list-unstyled();
 }
 
 .list--inset {
-    padding-left: spacing(15);
+  padding-left: spacing(15);
 }
 
 .list-inset-wrap {
-    & > ul {
-        padding-left: spacing(15);
-    }
+  & > ul {
+    padding-left: spacing(15);
+  }
 }
 
 .list--css-col {
+  margin: 0;
+  columns: 1;
+
+  @include respond-to(small) {
+    column-gap: rem-calc(50);
+    columns: 2;
+  }
+
+  @include respond-to(medium) {
+    columns: 3;
+  }
+
+  li {
+    padding-left: 0;
     margin: 0;
-    columns: 1;
-
-    @include respond-to(small) {
-        columns: 2;
-        column-gap: rem-calc(50);
-    }
-
-    @include respond-to(medium) {
-        columns: 3;
-    }
-
-    li {
-        margin: 0;
-        padding-left: 0;
-    }
+  }
 }
 
 .list--css-col--single {
+  columns: 1;
+
+  @include respond-to(small) {
     columns: 1;
+  }
 
-    @include respond-to(small) {
-        columns: 1;
-    }
-
-    @include respond-to(medium) {
-        columns: 1;
-    }
+  @include respond-to(medium) {
+    columns: 1;
+  }
 }
 
 // Declare the numbered list styling on both the modifier class and globally to all ol's
 ol {
-    @include list--numbered;
+  @include list--numbered;
 }

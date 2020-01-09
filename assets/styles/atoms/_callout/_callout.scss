@@ -3,16 +3,18 @@
 // ==========================================================================
 
 .callout {
-    // Trim the callout so the last child doesn't have spacing bottom
-    @include trim();
-    margin: spacing(base 0);
-    padding: spacing(base);
-    background: palette("grey");
+  // Trim the callout so the last child doesn't have spacing bottom
+  @include trim();
 
-    @include respond-to(medium) {
-        padding: spacing(double);
-    }
+  padding: spacing(base);
+  margin: spacing(base 0);
+  background: palette("grey");
+
+  @include respond-to(medium) {
+    padding: spacing(double);
+  }
 }
+
 .callout:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }

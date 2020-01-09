@@ -2,23 +2,24 @@
 // Horizontal Rule Atom
 // ==========================================================================
 
-hr, .hr {
-    border-top: rem-calc(2) solid palette("grey");
-    border-bottom: 0;
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    margin: spacing(quad 0);
+hr,
+.hr {
+  overflow: visible;
+  height: 0;
+  box-sizing: content-box;
+  border-top: rem-calc(2) solid palette("grey");
+  border-bottom: 0;
+  margin: spacing(quad 0);
 }
 
 .hr--small {
-    margin: spacing(double 0);
+  margin: spacing(double 0);
 }
 
 .hr--xsmall {
-    margin: spacing(base 0);
+  margin: spacing(base 0);
 }
 
 .hr--dark {
-    border-top: rem-calc(2) solid tint(palette("grey"), "darken");
+  border-top: rem-calc(2) solid tint(palette("grey"), "darken");
 }

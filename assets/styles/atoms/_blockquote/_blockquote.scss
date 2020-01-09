@@ -3,22 +3,22 @@
 // ==========================================================================
 
 blockquote {
-    text-align: left;
-    margin: spacing(25 0);
-    position: relative;
+  position: relative;
+  margin: spacing(25 0);
+  text-align: left;
 
-    // Font sizing and params for quote icons before and after text
-    &:before {
-        font-size: ms(4);
-        display: block;
-        position: absolute;
-        left: -0.5em;
-        // vertical-align: baseline;
-    }
+  // Font sizing and params for quote icons before and after text
+  &::before {
+    position: absolute;
+    left: -0.5em;
+    display: block;
+    font-size: ms(4);
+    // vertical-align: baseline;
+  }
 
-    // The '“' quote icon before the text
-    &:before {
-        content: "“";
-        margin-right: spacing(3);
-    }
+  // The '“' quote icon before the text
+  &::before {
+    margin-right: spacing(3);
+    content: "“";
+  }
 }

@@ -9,7 +9,8 @@
 // TLDR; - padding-top: spacing(10);
 // TLDR; - padding-top: spacing(quad);
 
-// *Important* Remember to load this after including (main.scss) - default usage - @include palette-load($colours-map);
+// *Important* Remember to load this after including (main.scss)
+// - default usage - @include spacing-load($spacing-map);
 // ==========================================================================
 
 @import "../tools/map-get-if-exists";

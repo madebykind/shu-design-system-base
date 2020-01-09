@@ -4,10 +4,11 @@
 
 // wraps the iframe embed so we can use fluid vids and still get rounded corners
 .video {
-    border-radius: rem-calc(5);
-    overflow: hidden;
-    &,
-    video {
-        max-width: 100%;
-    }
+  overflow: hidden;
+  border-radius: rem-calc(5);
+
+  &,
+  video {
+    max-width: 100%;
+  }
 }

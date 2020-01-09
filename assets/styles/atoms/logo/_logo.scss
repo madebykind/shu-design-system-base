@@ -3,13 +3,14 @@
 // ==========================================================================
 
 .logo {
-    fill: white;
-    width: rem-calc(80);
+  width: rem-calc(80);
+  fill: white;
 
-    @include respond-to(medium) {
-        width: rem-calc(130);
-    }
-    @include link-hover() {
-        opacity: 0.85;
-    }
+  @include respond-to(medium) {
+    width: rem-calc(130);
+  }
+
+  @include link-hover() {
+    opacity: 0.85;
+  }
 }

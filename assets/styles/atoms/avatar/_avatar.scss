@@ -3,13 +3,13 @@
 // ==========================================================================
 
 .avatar {
-    border-radius: 100%;
-    background: #EEEEEE;
-    width: rem-calc(40);
-    height: rem-calc(40);
+  width: rem-calc(40);
+  height: rem-calc(40);
+  background: #eee;
+  border-radius: 100%;
 
-    img {
-        border-radius: 100%;
-        mac-width: 100%;
-    }
+  img {
+    border-radius: 100%;
+    mac-width: 100%;
+  }
 }

@@ -3,65 +3,69 @@
 // ==========================================================================
 
 @mixin close() {
-    display: block;
-    position: relative;
-    width: rem-calc(50);
-    height: rem-calc(50);
+  position: relative;
+  display: block;
+  width: rem-calc(50);
+  height: rem-calc(50);
 
-    &:before, &:after {
-        position: absolute;
-        left: 45%;
-        top: 17%;
-        content: ' ';
-        height: rem-calc(30);
-        width: rem-calc(2);
-        background-color: palette("black");
-    }
+  &::before,
+  &::after {
+    position: absolute;
+    top: 17%;
+    left: 45%;
+    width: rem-calc(2);
+    height: rem-calc(30);
+    background-color: palette("black");
+    content: " ";
+  }
 
-    &:before {
-        transform: rotate(45deg);
-    }
+  &::before {
+    transform: rotate(45deg);
+  }
 
-    &:after {
-        transform: rotate(-45deg);
-    }
+  &::after {
+    transform: rotate(-45deg);
+  }
 
-    &:hover {
-        &:before, &:after {
-            background-color: palette("primary");
-        }
+  &:hover {
+    &::before,
+    &::after {
+      background-color: palette("primary");
     }
+  }
 }
 
 
 // Small modifier halves the size of the close icon
 .close-kind--small {
-    width: rem-calc(18);
-    height: rem-calc(18);
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
+  width: rem-calc(18);
+  height: rem-calc(18);
 
-    &:before, &:after {
-        position: absolute;
-        left: 90%;
-        top: 0;
-        content: ' ';
-        height: rem-calc(15);
-        width: rem-calc(2);
-        background-color: palette("white");
-    }
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: rem-calc(2);
+    height: rem-calc(15);
+    background-color: palette("white");
+    content: " ";
+  }
 
-    &:before {
-        transform: rotate(45deg);
-    }
+  &::before {
+    transform: rotate(45deg);
+  }
 
-    &:after {
-        transform: rotate(-45deg);
-    }
+  &::after {
+    transform: rotate(-45deg);
+  }
 
-    &:hover {
-        &:before, &:after {
-            background-color: palette("white");
-        }
+  &:hover {
+    &::before,
+    &::after {
+      background-color: palette("white");
     }
+  }
 }

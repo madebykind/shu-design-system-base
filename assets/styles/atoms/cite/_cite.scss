@@ -3,9 +3,10 @@
 // ==========================================================================
 
 // Default HTML element + specific class overwrites
-cite, .cite {
-    // Trim the callout so the last child doesn't have spacing bottom
-    font-style: normal;
-    font-weight: bold;
-    font-size: ms(-2);
+cite,
+.cite {
+  font-size: ms(-2);
+  // Trim the callout so the last child doesn't have spacing bottom
+  font-style: normal;
+  font-weight: bold;
 }
