@@ -67,7 +67,7 @@
     transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
   }
 }
-@debug $__palette;
+
 // Burger outer wrap, add background colours here if you want
 .burger {
   display: flex;
