@@ -29,6 +29,7 @@
 
         @include link-hover() {
             color: tint(white, 'darken');
+            text-decoration: underline;
         }
     }
 
