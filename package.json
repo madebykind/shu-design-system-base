@@ -107,8 +107,7 @@
   },
   "lint-staged": {
     "*.{js,vue}": [
-      "yarn lint:js",
-      "git add"
+      "yarn lint:js"
     ]
   },
   "title": "SHU Design system",
