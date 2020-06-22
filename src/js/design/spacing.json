@@ -1,0 +1,8 @@
+{
+  "half": 6,
+  "base": 12,
+  "double": 24,
+  "triple": 36,
+  "quad": 48,
+  "oct": 96
+}

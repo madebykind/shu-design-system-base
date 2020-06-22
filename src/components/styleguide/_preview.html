@@ -1,0 +1,95 @@
+{%- set noPad = false -%}
+{%- if _target.context.preview and 'noPad' in _target.context.preview -%}
+  {%- set noPad = true -%}
+{%- endif -%}
+
+{%- set spritePath = 'http://' ~ assetHostname ~ ':' ~ assetPort ~ '/img/icons.svg' %}
+{%- if isBuild -%}
+  {%- set spritePath = 'img/icons.svg' -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Preview Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <!-- Roboto Slab: 300(light), 400(regular), 500(bold) -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:400,500,700">
+
+    <!-- Typekit -->
+    <!-- Stozl: 500(medium), 700(bold -->
+    <link rel="stylesheet" href="https://use.typekit.net/ccp7pce.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+
+
+    {% if isBuild %}
+      <link media="all" rel="stylesheet" href="{{ 'app.css' | rev | path }}">
+    {% endif %}
+
+    <!-- Inline styling for Preview context logic at the top of this file -->
+    <style>
+      body {
+        {% if dark %}
+
+        margin: 25px !important;
+        background: black;
+        background: white;
+        {% else %}
+        {% endif %}
+        {% if not noPad %}
+        {% endif %}
+      }
+    </style>
+  </head>
+  <script>
+    window.APP = {
+      modules: {},
+      addModule: function(name, config) {
+        this.modules[name] = this.modules[name] || [];
+        this.modules[name].push(config);
+      },
+      DEBUG: 1,
+    };
+    (function(){
+      var docEl = document.documentElement;
+      docEl.classList.remove('no-js');
+      docEl.classList.add('js', 'js-loading');
+    }());
+
+    {# Ajax in SVG sprite #}
+    (function(){
+      var ajax = new XMLHttpRequest();
+      ajax.open("GET", "{{ spritePath }}", true);
+      ajax.send();
+      ajax.onload = function(e) {
+        var div = document.createElement("div");
+        div.hidden = true;
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+      }
+    }());
+  </script>
+
+  <!-- contenteditable so we can easily mess with content within Fractal -->
+  <body class="js forms" contenteditable="contenteditable">
+    {% if _target.status.label == 'Deprecated' %}
+        <h2 style="color: {{ _target.status.color }};">{{ _target.status.label }} - {{ _target.status.description }}</h2>
+    {% endif %}
+    <div class="shu-design-system-v1-0">
+      {{ yield | safe }}
+    </div>
+  </body>
+
+  {% if isBuild %}
+    <script src="{{ 'chunk-vendors.js' | rev | path }}"></script>
+    <script src="{{ 'app.js' | rev | path }}"></script>
+  {% else %}
+  <script src="http://{{ assetHostname }}:{{ assetPort }}/js/chunk-vendors.js"></script>
+  <script src="http://{{ assetHostname }}:{{ assetPort }}/js/app.js"></script>
+  {% endif %}
+</html>
