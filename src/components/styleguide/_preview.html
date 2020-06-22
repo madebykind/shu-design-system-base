@@ -28,7 +28,7 @@
 
 
     {% if isBuild %}
-      <link media="all" rel="stylesheet" href="{{ 'app.css' | rev | path }}">
+      <link media="all" rel="stylesheet" href="{{ 'shu-design-system-base.css' | rev | path }}">
     {% endif %}
 
     <!-- Inline styling for Preview context logic at the top of this file -->
@@ -47,7 +47,7 @@
     </style>
   </head>
   <script>
-    window.APP = {
+    window.SHU = {
       modules: {},
       addModule: function(name, config) {
         this.modules[name] = this.modules[name] || [];
@@ -86,8 +86,8 @@
   </body>
 
   {% if isBuild %}
-    <script src="{{ 'chunk-vendors.js' | rev | path }}"></script>
-    <script src="{{ 'app.js' | rev | path }}"></script>
+    <!-- <script src="{{ 'chunk-vendors.js' | rev | path }}"></script> -->
+    <script src="{{ 'shu-design-system-base.js' | rev | path }}"></script>
   {% else %}
   <script src="http://{{ assetHostname }}:{{ assetPort }}/js/chunk-vendors.js"></script>
   <script src="http://{{ assetHostname }}:{{ assetPort }}/js/app.js"></script>

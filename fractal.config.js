@@ -12,7 +12,7 @@ const mandelbrot = require("@frctl/mandelbrot");
 const jsonfile = require("jsonfile");
 
 const srcPath = path.resolve(__dirname, "src");
-const staticPath = path.resolve(__dirname, "web/dist");
+const staticPath = path.resolve(__dirname, "dist");
 
 const pkg = require("./package.json");
 

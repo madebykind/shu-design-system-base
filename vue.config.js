@@ -52,6 +52,9 @@ module.exports = {
   runtimeCompiler: false,
   outputDir: "dist",
   filenameHashing: false,
+  pages: {
+    "shu-design-system-base": 'src/main.js',
+  },
   // @todo implement asset manifest parsing in WP theme before we can enable this
   // filenameHashing: isProduction,
 
