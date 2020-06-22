@@ -51,7 +51,7 @@ const config = {
 module.exports = {
   runtimeCompiler: false,
   outputDir: "dist",
-  filenameHashing: true,
+  filenameHashing: false,
   // @todo implement asset manifest parsing in WP theme before we can enable this
   // filenameHashing: isProduction,
 
@@ -79,7 +79,7 @@ module.exports = {
           {
             context: "src/images",
             from: "**/*{.gif,.jpg,.jpeg,.png,.svg}",
-            to: isProduction ? "img/[path][name].[contenthash:8].[ext]" : "img/[path][name].[ext]",
+            to: "img/[path][name].[ext]",
             toType: "template",
           },
         ]
