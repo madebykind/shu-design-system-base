@@ -8,26 +8,25 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "serve": "concurrently \"vue-cli-service serve\" \"fractal start\"",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "concurrently \"vue-cli-service lint --fix && vue-cli-service lint:style\"",
     "build:fractal": "fractal build",
     "generate:component": "hygen fractal-component new",
+    "link-design-system-components": "bin/link-design-system-components",
+    "lint": "concurrently \"vue-cli-service lint --fix && vue-cli-service lint:style\"",
     "lint:config-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint:js": "vue-cli-service lint --fix",
     "lint:styles": "vue-cli-service lint:style",
+    "prepublish": "yarn run build && yarn build:fractal",
     "project:after-install": "./scripts/project/after-install",
     "project:apply-env": "./scripts/project/apply-env",
     "project:configure": "./scripts/project/configure",
     "project:release": "./scripts/deploy/release",
-    "project:setup-craft": "./scripts/project/setup-craft",
+    "serve": "concurrently \"yarn serve:assets\" \"yarn serve:fractal\"",
     "serve:assets": "DEBUG='express:*' vue-cli-service serve",
     "serve:fractal": "fractal start",
     "test:coverage": "jest --coverage",
-    "test:watch": "vue-cli-service test:unit --watch",
-    "prepublish": "yarn run build && yarn build:fractal",
-    "link-design-system-components": "bin/link-design-system-components.bin.js"
+    "test:unit": "vue-cli-service test:unit",
+    "test:watch": "vue-cli-service test:unit --watch"
   },
   "bin": {
     "link-design-system-components": "./bin/link-design-system-components"
