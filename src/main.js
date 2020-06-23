@@ -1,8 +1,8 @@
 // Widget
-import "./js/widgets/toggle";
+import "@/js/widgets/toggle";
 
 // Styles
-import "./components/shu-design-system-base.scss";
+import "@/assets/styles/shu-design-system-base.scss";
 
 // Init
 import init from "./js/lib/init";

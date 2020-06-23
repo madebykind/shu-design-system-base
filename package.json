@@ -37,7 +37,7 @@
     "enquire.js": "^2.1.6",
     "modularscale-sass": "3.0.5",
     "tiny-slider": "^2.9.2",
-    "vue": "2"
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
