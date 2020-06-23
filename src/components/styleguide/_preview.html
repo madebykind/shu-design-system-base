@@ -86,10 +86,10 @@
   </body>
 
   {% if isBuild %}
-    <!-- <script src="{{ 'chunk-vendors.js' | rev | path }}"></script> -->
+    <script src="{{ 'chunk-vendors.js' | rev | path }}"></script>
     <script src="{{ 'shu-design-system-base.js' | rev | path }}"></script>
   {% else %}
-  <script src="http://{{ assetHostname }}:{{ assetPort }}/js/chunk-vendors.js"></script>
-  <script src="http://{{ assetHostname }}:{{ assetPort }}/js/app.js"></script>
+    <script src="http://{{ assetHostname }}:{{ assetPort }}/js/chunk-vendors.js"></script>
+    <script src="http://{{ assetHostname }}:{{ assetPort }}/js/shu-design-system-base.js"></script>
   {% endif %}
 </html>

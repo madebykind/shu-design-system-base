@@ -53,7 +53,10 @@ module.exports = {
   outputDir: "dist",
   filenameHashing: false,
   pages: {
-    "shu-design-system-base": 'src/main.js',
+    "shu-design-system-base": {
+      entry: 'src/main.js',
+      chunks: ['chunk-vendors', 'shu-design-system']
+    }
   },
   // @todo implement asset manifest parsing in WP theme before we can enable this
   // filenameHashing: isProduction,
@@ -98,7 +101,7 @@ module.exports = {
         },
       }),
       new MiniCssExtractPlugin({
-        filename: "css/[name].[contenthash:8].css",
+        filename: "css/[name].css",
       }),
     ],
   },
