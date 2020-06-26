@@ -14,17 +14,17 @@
 $_tint-amount: 10;
 
 @function tint($color, $shade, $multiplier: 1) {
-    $_tint-amount: $_tint-amount * $multiplier;
+    $tint-amount: $_tint-amount * $multiplier;
 
-    @if $_tint-amount > 100 {
-      $_tint-amount: 100;
+    @if $tint-amount > 100 {
+      $tint-amount: 100;
     }
 
     @if $shade == "lighten" {
-        @return lighten($color, $_tint-amount);
+        @return lighten($color, $tint-amount);
     } @else {
         @if $shade == "darken" {
-            @return darken($color, $_tint-amount);
+            @return darken($color, $tint-amount);
         } @else {
             @error '$shade value must be one of "lighten" or "darken"';
         }
