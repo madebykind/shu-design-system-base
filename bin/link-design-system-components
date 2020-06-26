@@ -5,9 +5,8 @@ require("colors");
 
 const fs = require('fs');
 const path = require('path');
-const dsPathConfig = require('../build/path-config.json');
-const dsStylesPath = path.resolve(__dirname, '..', dsPathConfig.src, dsPathConfig.stylesheets.src);
-const dsAtomsPath = path.resolve(dsStylesPath, 'atoms');
+const dsComponentsPath = 'src/components';
+const dsAtomsPath = path.resolve(__dirname, '..', dsComponentsPath, 'atoms');
 
 let argPath = process.argv[2];
 let localStylesPath;
@@ -17,9 +16,7 @@ if (argPath) {
     localStylesPath = path.resolve(path.resolve(process.cwd(), argPath));
 
 } else {
-    const localPathConfig = require(path.resolve(process.cwd(), 'build/path-config.json'));
-
-    localStylesPath = path.resolve(process.cwd(), localPathConfig.src, localPathConfig.stylesheets.src);
+    localStylesPath = path.resolve(process.cwd(), dsComponentsPath);
 }
 
 let localAtomsPath = path.resolve(localStylesPath, 'atoms/imported');

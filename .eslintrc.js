@@ -1,30 +1,21 @@
-// http://eslint.org/docs/user-guide/configuring
+const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
-  },
   env: {
-    browser: true,
+    node: true,
   },
-  extends: 'airbnb-base',
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
-  // add your custom rules here
-  'rules': {
-    // don't require .vue extension when importing
-    'import/extensions': ['error', 'always', {
-      'js': 'never',
-      'vue': 'never'
-    }],
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'no-console': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'no-underscore-dangle': 0,
-    'no-param-reassign': 0,
-  }
-}
+  extends: ["@vue/airbnb", "plugin:vue/recommended", "plugin:prettier/recommended", "prettier/vue"],
+  plugins: ["vue", "prettier"],
+  rules: {
+    "prettier/prettier": 1,
+    "no-console": isProduction ? 1 : 0,
+    "no-debugger": isProduction ? 2 : 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [2, { devDependencies: true }],
+  },
+  parserOptions: {
+    parser: "babel-eslint",
+  },
+};
