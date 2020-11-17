@@ -18,14 +18,8 @@
     <!-- Roboto Slab: 300(light), 400(regular), 500(bold) -->
     <link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:400,500,700">
 
-    <!-- Typekit -->
-    <!-- Stozl: 500(medium), 700(bold -->
-    <link rel="stylesheet" href="https://use.typekit.net/ccp7pce.css">
-
     <!-- FontAwesome -->
     <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-
-
 
     {% if isBuild %}
       <link media="all" rel="stylesheet" href="{{ 'shu-design-system-base.css' | rev | path }}">
@@ -92,4 +86,5 @@
     <script src="http://{{ assetHostname }}:{{ assetPort }}/js/chunk-vendors.js"></script>
     <script src="http://{{ assetHostname }}:{{ assetPort }}/js/shu-design-system-base.js"></script>
   {% endif %}
+
 </html>
