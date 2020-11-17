@@ -6,9 +6,6 @@
 %list-base {
   padding-left: 0;
   margin: 0 0 1em 0.5em;
-  font-size: ms(0);
-  // list-style: none;
-  line-height: 1.44;
 
   @include respond-to(medium) {
     margin: 0 0 1em 1em;
@@ -16,7 +13,6 @@
 
   li {
     margin-bottom: 0.5em;
-    font-size: ms(0);
   }
 }
 
