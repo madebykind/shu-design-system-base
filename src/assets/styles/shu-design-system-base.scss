@@ -13,6 +13,9 @@
 // @TODO / @TEMP - while we figure out namespacing issue
 @import "normalize";
 
+// Import global document styles
+@import "root";
+
 // Namespacing for the new design system styling
 .shu-design-system-v1-0 {
 
