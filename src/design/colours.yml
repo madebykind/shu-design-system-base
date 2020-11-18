@@ -5,6 +5,9 @@ global:
   type: 'color'
 props:
   black:
+    value: '#000000'
+    comment: 'True Black'
+  dark-grey:
     value: '#333333'
     comment: 'Project Black'
   white:
