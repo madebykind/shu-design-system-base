@@ -65,7 +65,7 @@ button.pill--grey {
 
 .pill--black {
   @include link() {
-    background: black;
+    background: palette("black");
     color: white;
   }
 }
