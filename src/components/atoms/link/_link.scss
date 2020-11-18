@@ -33,6 +33,8 @@ a,
     text-decoration-skip: none;
   }
 }
+
+// Deprecated - Default link weight is 500
 // .link--bold {
 //   @include link() {
 //     font-weight: 500;
@@ -59,12 +61,13 @@ a,
   }
 }
 
-.link--underlined {
-  @include link() {
-    text-decoration: underline !important;
-    text-decoration-skip-ink: auto !important;
-  }
-}
+// Deprecated - default link is styled with underlines
+// .link--underlined {
+//   @include link() {
+//     text-decoration: underline !important;
+//     text-decoration-skip-ink: auto !important;
+//   }
+// }
 
 // Block display modifier
 .link--block {
