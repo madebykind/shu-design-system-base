@@ -9,7 +9,7 @@
   border-radius: rem-calc(3);
   // @TODO - move font-family to global vars?
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: ms(0);
+  font-size: ms(1, $thread: small);
   font-weight: 500;
   line-height: 1;
   text-align: center;
@@ -92,7 +92,7 @@ button {
 // Small modifier, halves the padding params of whichever btn it's applied to
 .btn--small {
   padding: spacing(7 10 6 10);
-  font-size: ms(-1);
+  font-size: ms(0);
 }
 
 // Modifier to change the default (inline) styling to block
