@@ -5,6 +5,8 @@
 table {
     border-collapse: collapse;
     border: 1px solid #e7e7e7;
+    // Enable tabular and lining nuberals.
+    font-feature-settings: 'tnum' 1, 'onum' 0, 'lnum' 1;
     margin: spacing(base 0);
     max-width: 100%;
     overflow-x: scroll;
