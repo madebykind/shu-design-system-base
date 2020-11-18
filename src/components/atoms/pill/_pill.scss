@@ -9,9 +9,8 @@
   padding: spacing(5 10 5 12);
   margin-bottom: spacing(5);
   border-radius: rem-calc(5);
-  font-family: "stolzl", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 10px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 5px;
   line-height: 1.2;
   text-align: center;
@@ -28,6 +27,9 @@
 
 a.pill,
 button.pill {
+  @include link() {
+    font-weight: 700;
+  }
   // @TODO only work when a or button
   @include link-hover {
     background: tint(palette("primary"), "darken");
