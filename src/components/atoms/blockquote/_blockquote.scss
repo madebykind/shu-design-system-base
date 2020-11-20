@@ -3,10 +3,13 @@
 // ==========================================================================
 
 blockquote {
-  font-size: ms(0, $thread: large);
   margin: spacing(25 0);
   position: relative;
   text-align: left;
+
+  p {
+    font-size: ms(0, $thread: large);
+  }
 
   // Font sizing and params for quote icons before and after text
   &::before {
