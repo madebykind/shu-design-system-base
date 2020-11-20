@@ -1,3 +1,6 @@
+// Sass or CSS variables
+@import "variables";
+
 // Design tokens
 @import "design-tokens";
 
@@ -6,14 +9,14 @@
 @import "tools";
 
 // load design tokens into sass
-@include palette-load($colours-map);
-@include breakpoint-load($breakpoints-map);
-@include spacing-load($spacing-map);
+// @include palette-load($colours-map);
+// @include breakpoint-load($breakpoints-map);
+// @include spacing-load($spacing-map);
 
-// @TODO / @TEMP - while we figure out namespacing issue
+// Normalize browser default styles
 @import "normalize";
 
-// Import global document styles
+// Import root document styles
 @import "root";
 
 // Namespacing for the new design system styling
