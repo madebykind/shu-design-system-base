@@ -38,7 +38,7 @@ fs.readdir(dsAtomsPath, { withFileTypes: true }, (err, atoms) => {
             } else {
                 console.log(`Linking`, `${atom.name}`.green,  ` atom to ${targetPath}`);
 
-                fs.symlink(sourcePath, targetPath, (err) => { throw err });
+                fs.symlink(sourcePath, targetPath, (err) => { console.log(err) });
             }
         }
     });
