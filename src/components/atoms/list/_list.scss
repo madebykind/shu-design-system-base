@@ -4,11 +4,13 @@
 
 // The base list styles
 %list-base {
+  font-size: ms(1, $thread: small);
+  list-style-position: inside;
   padding-left: 0;
-  margin: 0 0 1em 0.5em;
+  margin: 0 0 1em 0;
 
   @include respond-to(medium) {
-    margin: 0 0 1em 1em;
+  //  margin: 0 0 1em 0;
   }
 
   li {
@@ -21,25 +23,10 @@
   @extend %list-base;
 
   list-style-position: outside;
+  margin: 0 0 1em 1em;
 
   li {
-    position: relative;
-    padding-left: rem-calc(15);
-
-    // Create and position the bullet from the before psuedo element
-    // &:before {
-    //     position: absolute;
-    //     top: rem-calc(10);
-    //     left: 0;
-    //     display: block;
-    //     margin-bottom: rem-calc(4);
-    //     margin-right: rem-calc(8);
-    //     content: " ";
-    //     width: 4px;
-    //     height: 4px;
-    //     border-radius: 100%;
-    //     background-color: palette("black");
-    // }
+    padding-left: 0.5em;
   }
 }
 
@@ -49,20 +36,7 @@
   counter-reset: list;
 
   li {
-    position: relative;
-    padding-left: rem-calc(15);
-
-    // Create and position the counter from the before psuedo element
-    // &:before {
-    //     position: absolute;
-    //     top: rem-calc(4);
-    //     left: 0;
-    //     counter-increment: list;
-    //     content: counters(list, ".") ".";
-    //     color: palette("black");
-    //     margin-right: rem-calc(12);
-    //     font-size: ms(-1);
-    // }
+    // padding-left: 0.5em;
   }
 
   ol {
