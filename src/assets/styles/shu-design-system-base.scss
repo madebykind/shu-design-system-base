@@ -9,9 +9,9 @@
 @import "tools";
 
 // load design tokens into sass
-// @include palette-load($colours-map);
-// @include breakpoint-load($breakpoints-map);
-// @include spacing-load($spacing-map);
+@include palette-load($colours-map);
+@include breakpoint-load($breakpoints-map);
+@include spacing-load($spacing-map);
 
 // Normalize browser default styles
 @import "normalize";
