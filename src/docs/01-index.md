@@ -1,7 +1,7 @@
 ---
 title: "SHU Design System Base"
 ---
-LOL You can browse the full component library at any time using the navigation on the left, it follows (an expanded version of) the trends defined by the [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) methodology. This system uses the [Fractal](https://fractal.build) tool, documentation can be found in the project resources section below.
+You can browse the full component library at any time using the navigation on the left, it follows (an expanded version of) the trends defined by the [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) methodology. This system uses the [Fractal](https://fractal.build) tool, documentation can be found in the project resources section below.
 
 ### Components
 Component Library contents
