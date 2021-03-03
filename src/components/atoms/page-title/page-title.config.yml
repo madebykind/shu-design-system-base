@@ -3,7 +3,7 @@ status: "ready"
 
 context:
   pageTitle:
-    heading: Clearing Page Title
+    heading: Page Title
 
 variants:
   -

@@ -1,7 +1,7 @@
 ---
-title: "SHU Design system"
+title: "SHU Design System Base"
 ---
-LOL You can browse the full component library at any time using the navigation on the left, it follows (an expanded version of) the trends defined by the [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) methodology. This system uses the [Fractal](https://fractal.build) tool, documentation can be found in the project resources section below.
+You can browse the full component library at any time using the navigation on the left, it follows (an expanded version of) the trends defined by the [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) methodology. This system uses the [Fractal](https://fractal.build) tool, documentation can be found in the project resources section below.
 
 ### Components
 Component Library contents
@@ -60,37 +60,37 @@ Documentation for global utilities / helpers and general system rules
     </tr>
     <tr>
       <td>
-        <a href="/docs/breakpoints.html">Breakpoints</a>
+        <a href="docs/breakpoints.html">Breakpoints</a>
       </td>
       <td>Breakpoint based variables and tools documentation.</td>
     </tr>
     <tr>
       <td>
-        <a href="/docs/colour-palette.html">Colour Palette</a>
+        <a href="docs/colour-palette.html">Colour Palette</a>
       </td>
       <td>Colour Palette variable and helper tools documentation.</td>
     </tr>
     <tr>
       <td>
-        <a href="/docsl/spacing.html">Spacing</a>
+        <a href="docs/spacing.html">Spacing</a>
       </td>
       <td>Spacing helper tool and ruling documentation.</td>
     </tr>
     <tr>
       <td>
-        <a href="/docs/modular-scale.html">Modular Scale</a>
+        <a href="docs/modular-scale.html">Modular Scale</a>
       </td>
       <td>Typographical scale ruling and plugin documentation.</td>
     </tr>
     <tr>
       <td>
-        <a href="/docs/grid.html">Grid System</a>
+        <a href="docs/grid.html">Grid System</a>
       </td>
       <td>Grid system documentation.</td>
     </tr>
     <tr>
       <td>
-        <a href="/docs/alignment.html">Alignment</a>
+        <a href="docs/alignment.html">Alignment</a>
       </td>
       <td>Alignment helper tool documentation.</td>
     </tr>

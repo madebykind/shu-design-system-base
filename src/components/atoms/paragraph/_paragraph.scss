@@ -3,13 +3,7 @@
 // ==========================================================================
 
 p {
-  padding: 0;
-  // All paragraphs have margin set in em's
+  // All paragraphs have margin set in em
   margin: 0 0 1em 0;
-  font-size: ms(0);
-  line-height: 1.66;
-}
-
-.fancy {
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: ms(1, $thread: small);
 }

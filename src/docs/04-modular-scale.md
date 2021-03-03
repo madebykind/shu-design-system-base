@@ -2,7 +2,7 @@
 title: Modular Scale
 ---
 
-Font sizing is based on a modular scale, and utilises the [modularscale-sass](https://github.com/modularscale/modularscale-sass) plugin to split 2 threads, mobile and desktop. Mobile uses a [16px / 1.200 ratio](http://www.modularscale.com/?17&px&1.200), desktop uses a [16px / 1.333 ratio](http://www.modularscale.com/?15&px&1.333).  
+Font sizing is based on a modular scale, and utilises the [modularscale-sass](https://github.com/modularscale/modularscale-sass) plugin to split 3 threads, small, default and large. Small uses a [12px / 1.5 ratio](http://www.modularscale.com/?12&px&1.500), Default uses a [16px / [16px / 1.5 ratio](http://www.modularscale.com/?16&px&1.500), and Large uses [21px / 1.5 ratio](http://www.modularscale.com/?21&px&1.500).
 
 `tools/_font-ratio.scss` is where these parameteres are defined and can be tweaked. Docs on the available options can be found [here](https://github.com/modularscale/modularscale-sass).
 
@@ -23,7 +23,7 @@ This would give you a 2 tier up, 16px base, 1.200 ratio font on small screens, a
 ## Useful things to know
 
 - Scale can be changed globally by simply changing the values in `tools/_font-ratio.scss`
-- Multiple threads can be added or removed 
+- Multiple threads can be added or removed
 
 
 ## Modular Scale defaults
@@ -38,9 +38,19 @@ The list below is the current default for this project.
 </thead>
 <tbody>
     <tr>
-        <td><code>default</code></td>
-        <td><code>17px</code></td>
-        <td><code>1.15</code></td>
+        <td><code>Small</code></td>
+        <td><code>12px</code></td>
+        <td><code>1.5</code></td>
+    <tr>
+    <tr>
+        <td><code>Default</code></td>
+        <td><code>16px</code></td>
+        <td><code>1.5</code></td>
+    <tr>
+    <tr>
+        <td><code>Large</code></td>
+        <td><code>21px</code></td>
+        <td><code>1.5</code></td>
     <tr>
 </tr>
 </table>

@@ -109,10 +109,10 @@
       "yarn lint:js"
     ]
   },
-  "title": "SHU Design system",
+  "title": "SHU Design System Base",
   "kindConfig": {
-    "title": "SHU Design system",
-    "siteName": "SHU Design system",
+    "title": "SHU Design System Base",
+    "siteName": "SHU Design System Base",
     "adminEmail": "dev@madebykind.com",
     "ports": {
       "assets": 8923,

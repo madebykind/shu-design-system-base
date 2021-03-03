@@ -1,27 +1,21 @@
 // ==========================================================================
-// Micro Text Atom
+// Page Title Atom
 // ==========================================================================
 
-// Micro Text
 .page-title {
-  padding: 0;
+  font-size: ms(4, $thread: small);
   margin: 0 0 0.5em 0;
-  color: palette("black");
-  font-family: "stolzl", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: ms(6);
-  font-weight: 500;
-  line-height: 1.2;
+  padding: 0;
 
   @include respond-to(medium) {
-    font-size: ms(10);
+    font-size: ms(3, $thread: large);
   }
 }
 
 .page-title--small {
-  font-size: ms(6);
-  line-height: 1.2;
+  font-size: ms(3);
 
   @include respond-to(medium) {
-    font-size: ms(8);
+    font-size: ms(4, $thread: small);
   }
 }
