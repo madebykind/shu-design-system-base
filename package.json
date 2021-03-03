@@ -1,6 +1,6 @@
 {
   "name": "shu-frontend-design-system",
-  "version": "4.0.5",
+  "version": "5.0.0",
   "description": "Front end assets for the SHU design system",
   "main": "src/scss/index.scss",
   "repository": "git@github.com:madebykind/shu-design-system-base.git",
@@ -17,10 +17,6 @@
     "lint:js": "vue-cli-service lint --fix",
     "lint:styles": "vue-cli-service lint:style",
     "prepublish": "yarn run build && yarn build:fractal",
-    "project:after-install": "./scripts/project/after-install",
-    "project:apply-env": "./scripts/project/apply-env",
-    "project:configure": "./scripts/project/configure",
-    "project:release": "./scripts/deploy/release",
     "serve": "concurrently \"yarn serve:assets\" \"yarn serve:fractal\"",
     "serve:assets": "DEBUG='express:*' vue-cli-service serve",
     "serve:fractal": "fractal start",
