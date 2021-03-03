@@ -1,0 +1,24 @@
+/**
+ * 1. Border-box *all the things*, as suggested in:
+ *    http:// paulirish.com/2012/box-sizing-border-box-ftw
+ */
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  box-sizing: border-box; /* 1 */
+  color: palette("dark-grey");
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* 1 */
+}
+
+body {
+  font-family: $font-sans;
+  line-height: 1.6;
+}

@@ -1,3 +1,6 @@
+// Sass or CSS variables
+@import "variables";
+
 // Design tokens
 @import "design-tokens";
 
@@ -10,8 +13,11 @@
 @include breakpoint-load($breakpoints-map);
 @include spacing-load($spacing-map);
 
-// @TODO / @TEMP - while we figure out namespacing issue
+// Normalize browser default styles
 @import "normalize";
+
+// Import root document styles
+@import "root";
 
 // Namespacing for the new design system styling
 .shu-design-system-v1-0 {

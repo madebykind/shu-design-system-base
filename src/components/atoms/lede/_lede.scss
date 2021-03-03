@@ -4,11 +4,10 @@
 
 .lede {
   // Mobile we match the font size so it's not overwhelming but leave the bold
-  font-size: ms(0);
-  line-height: 1.66;
+  font-size: ms(1, $thread: small);
 
   // Medium + we go to the standard lede size
   @include respond-to(medium) {
-    font-size: ms(1);
+    font-size: ms(0, $thread: large);
   }
 }

@@ -13,27 +13,20 @@ variants:
         modifier: link--plain
         message: This is a plain link item
   -
-    name: primary
-    context:
-      link:
-        modifier: link--primary
-        message: This is a primary link item
-  -
-    name: bold
-    context:
-      link:
-        modifier: link--bold
-        message: This is a bold link item
-
-  -
-    name: bold-primary
-    context:
-      link:
-        modifier: link--bold link--primary
-        message: This is a primary + bold link item
-  -
     name: block
     context:
       link:
         modifier: link--block
         message: This is a display block link item
+  -
+    name: fancy
+    context:
+      link:
+        modifier: link--fancy
+        message: This is a fancy link item
+  -
+    name: white
+    context:
+      link:
+        modifier: link--white
+        message: This is a white link item

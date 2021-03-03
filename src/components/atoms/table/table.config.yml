@@ -1,0 +1,191 @@
+title: "Table"
+status: "ready"
+
+context:
+  table:
+    header:
+      cols:
+        -
+          heading: Table header (single column)
+    rows:
+      -
+        cols:
+          -
+            value: Table cell content – <strong>Single column</strong>
+      -
+        cols:
+          -
+            value: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      -
+        cols:
+          -
+            value: Cras varius arcu metus, vel eleifend justo porttitor ac. Nulla imperdiet sed velit vitae congue.
+      -
+        cols:
+          -
+            value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum.
+variants:
+  -
+    name: Multiple columns
+    context:
+      table:
+        header:
+          cols:
+            -
+              heading: Table header (multiple columns)
+            -
+              heading: Table Header 2
+            -
+              heading: Table Header 3
+        rows:
+          -
+            cols:
+              -
+                value: Table cell content – <strong>Multiple columns</strong>
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum.
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum <a href="#">augue iaculis purus pellentesque</a>, finibus molestie nulla aliquet. Cras varius arcu metus, vel eleifend justo porttitor ac. Nulla imperdiet sed velit vitae congue. Consectetur adipiscing elit.
+          -
+            cols:
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              -
+                value: Cras varius arcu metus, vel eleifend justo porttitor ac. Nulla imperdiet sed velit vitae congue.
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum.
+          -
+            cols:
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              -
+                value: Cras varius arcu metus, vel eleifend justo porttitor ac. Nulla imperdiet sed velit vitae congue.
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum.
+          -
+            cols:
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              -
+                value: Cras varius arcu metus, vel eleifend justo porttitor ac. Nulla imperdiet sed velit vitae congue.
+              -
+                value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum.
+  -
+    name: Column and row headings, with caption
+    context:
+      table:
+        caption: Opening times
+        header:
+          cols:
+            -
+              heading: null
+            -
+              heading: Monday
+            -
+              heading: Tuesday
+            -
+              heading: Wednesday
+            -
+              heading: Thursday
+            -
+              heading: Friday
+        rows:
+          -
+            heading: 09:00–11:00
+            cols:
+              -
+                value: Closed
+              -
+                value: Open
+              -
+                value: Open
+              -
+                value: Closed
+              -
+                value: Closed
+          -
+            heading: 11:00–13:00
+            cols:
+              -
+                value: Open
+              -
+                value: Open
+              -
+                value: Closed
+              -
+                value: Closed
+              -
+                value: Closed
+          -
+            heading: 13:00–15:00
+            cols:
+              -
+                value: Open
+              -
+                value: Open
+              -
+                value: Open
+              -
+                value: Closed
+              -
+                value: Closed
+          -
+            heading: 15:00–16:00
+            cols:
+              -
+                value: Closed
+              -
+                value: Closed
+              -
+                value: Closed
+              -
+                value: Open
+              -
+                value: Open
+  -
+    name: Real-world usage
+    context:
+      table:
+        header:
+          cols:
+            -
+              heading: Academic Team
+              span: 2
+        rows:
+          -
+            cols:
+              -
+                value: Helen Batty<br>Senior Lecturer and UG Course Leader
+              -
+                value: <a href="tel:0114-225-2375">0114 225 2375</a><br><a href="tel:07342-092337">07342 092337</a><br><a href="mailto:h.batty@shu.ac.uk">h.batty@shu.ac.uk</a>
+
+          -
+            cols:
+              -
+                value: Myles Butler<br>Senior Lecturer and Practice Based Learning Course Leader
+              -
+                value: <a href="tel:0114-225-2231">0114 225 2231</a><br><a href="mailto:myles.butler@shu.ac.uk">myles.butler@shu.ac.uk</a>
+          -
+            cols:
+              -
+                value:  Kathryn Cassidy<br>Senior Lecturer
+              -
+                value: <a href="tel:0114-225-6481">0114 225 6481</a><br><a href="tel:07342-092330">07342 092330</a><br><a href="mailto:k.cassidy@shu.ac.uk">k.cassidy@shu.ac.uk</a>
+          -
+            cols:
+              -
+                value: Sue Dale<br>Senior Lecturer and Placement Lead
+              -
+                value: <a href="tel:0114-225-5376">0114 225 5376</a><br><a href="tel:07880-780371">07880 780371</a><br><a href="mailto:s.dale@shu.ac.uk">s.dale@shu.ac.uk</a>
+          -
+            cols:
+              -
+                value:  Aimee France <br>Senior Lecturer
+              -
+                value: <a href="tel:0114-225-2490">0114 225 2490</a><br><a href="tel:07880-780317">07880 780317</a><br><a href="mailto:aimee.france@shu.ac.uk">aimee.france@shu.ac.uk</a>
+          -
+            cols:
+              -
+                value: Carol Garcia <br>Senior Lecturer and PG Lead
+              -
+                value: <a href="tel:0114-225-5366">0114 225 5366</a><br><a href="tel:07342-092333">07342 092333</a><br><a href="mailto:c.m.garcia@shu.ac.uk">c.m.garcia@shu.ac.uk</a>

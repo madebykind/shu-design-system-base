@@ -1,11 +1,10 @@
 // ==========================================================================
-// Cite Atom
+// Bold Atom
 // ==========================================================================
 
-// Default HTML element + specific class overwrites
-cite,
-.cite {
-  font-size: ms(-1, $thread: large);
-  font-style: normal;
-  font-weight: bold;
+// Default HTML elements + specific class overwrites
+b,
+strong,
+.bold {
+  font-weight: 500;
 }

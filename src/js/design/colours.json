@@ -1,5 +1,6 @@
 {
-  "black": "rgb(51, 51, 51)",
+  "black": "rgb(0, 0, 0)",
+  "dark-grey": "rgb(51, 51, 51)",
   "white": "rgb(255, 255, 255)",
   "grey": "rgb(247, 247, 247)",
   "primary": "rgb(186, 0, 70)",

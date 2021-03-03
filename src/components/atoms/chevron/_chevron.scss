@@ -5,16 +5,20 @@
 // Build the actual chevron using borders
 @mixin chevron {
   position: relative;
-  top: 0.15em;
-  left: 0.15em;
-  display: inline-block;
-  width: rem-calc(5);
-  height: rem-calc(5);
+  //top: 0.15em;
+  //left: 0.15em;
+
+  display: block;
+  height: .5em;
+  width: .5em;
+
+  // width: rem-calc(5);
+  // height: rem-calc(5);
   border-width: rem-calc(2 2 0 0);
   border-style: solid;
   content: "";
   transform: rotate(135deg);
-  vertical-align: top;
+  // vertical-align: top;
 }
 
 @mixin chevron-primary {
@@ -31,8 +35,13 @@
 
 // Init the default chevron (points down)
 .chevron {
-  width: rem-calc(8);
-  height: rem-calc(8);
+//  width: rem-calc(8);
+//  height: rem-calc(8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
 
   &::before {
     @include chevron;
@@ -40,8 +49,10 @@
 }
 
 .chevron--inline {
+  // display: flex;
+  // align-items: center;
   &::before {
-    top: 0.3em;
+  //  top: 0.3em;
   }
 }
 

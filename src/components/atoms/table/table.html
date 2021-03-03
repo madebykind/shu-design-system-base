@@ -1,0 +1,29 @@
+<table>
+  {% if table.caption %}<caption>{{ table.caption }}</caption>{% endif %}
+  {% if table.header %}
+    <thead>
+      <tr>
+      {% for col in table.header.cols %}
+        {% if col.heading != null %}
+          <th scope="col"{% if col.span %} colspan="{{ col.span }}"{% endif %}>{{ col.heading }}</th>
+          {% else %}
+          <td></td>
+        {% endif %}
+      {% endfor %}
+      </tr>
+    </thead>
+  {% endif %}
+
+  <tbody>
+  {% for row in table.rows %}
+    <tr>
+      {% if row.heading %}
+        <th scope="row">{{ row.heading }}</th>
+      {% endif %}
+      {% for col in row.cols %}
+        <td>{{ col.value | safe }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

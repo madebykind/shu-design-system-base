@@ -1,0 +1,44 @@
+// ==========================================================================
+// Table Atom
+// ==========================================================================
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #e7e7e7;
+  // Enable tabular and lining nuberals.
+  font-feature-settings: "tnum" 1, "onum" 0, "lnum" 1;
+  margin: spacing(base 0);
+  max-width: 100%;
+  overflow-x: scroll;
+
+  caption {
+    color: palette("primary");
+    font-size: ms(1);
+    font-weight: 700;
+    padding: rem-calc(13) 0;
+    text-align: left;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  th {
+    background: palette("grey");
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  td,
+  th {
+    font-size: ms(0);
+    border: 1px solid #e7e7e7;
+    padding: rem-calc(13) rem-calc(26);
+  }
+
+  tfoot td {
+    background: palette("grey");
+    text-align: left;
+    vertical-align: bottom;
+  }
+}

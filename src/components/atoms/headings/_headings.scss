@@ -18,63 +18,40 @@ h5,
 .h5,
 h6,
 .h6 {
-  padding: 0;
   margin: 0 0 0.5em 0;
   color: palette("black");
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 700;
-  line-height: 1.4;
+  font-family: $font-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 h1,
 .h1 {
-  font-size: ms(4);
+  font-size: ms(3, $thread: small);
 
   @include respond-to(medium) {
-    font-size: ms(6);
+    font-size: ms(3);
   }
 }
 
 h2,
 .h2 {
-  font-size: ms(3);
-
-  @include respond-to(medium) {
-    font-size: ms(4);
-  }
+  font-size: ms(2);
 }
 
 h3,
 .h3 {
-  font-size: ms(2);
-
-  @include respond-to(medium) {
-    // font-size: ms(2, $thread: desktop);
-  }
+  font-size: ms(1, $thread: large);
 }
 
 h4,
 .h4 {
   font-size: ms(1);
-
-  @include respond-to(medium) {
-    // font-size: ms(1, $thread: desktop);
-  }
 }
 
 h5,
 .h5,
 h6,
 .h6 {
-  font-size: ms(0);
-
-  @include respond-to(medium) {
-    // font-size: ms(0, $thread: desktop);
-  }
+  font-size: ms(0, $thread: large);
 }
-
-.hero--title {
-  font-size: ms(10);
-}
-
-

@@ -1,6 +1,6 @@
 {
   "name": "shu-frontend-design-system",
-  "version": "4.0.3",
+  "version": "4.0.5",
   "description": "Front end assets for the SHU design system",
   "main": "src/scss/index.scss",
   "repository": "git@github.com:madebykind/shu-design-system-base.git",
@@ -29,7 +29,7 @@
     "test:watch": "vue-cli-service test:unit --watch"
   },
   "bin": {
-    "link-design-system-components": "./bin/link-design-system-components"
+    "link-design-system-components": "bin/link-design-system-components"
   },
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
@@ -109,10 +109,10 @@
       "yarn lint:js"
     ]
   },
-  "title": "SHU Design system",
+  "title": "SHU Design System Base",
   "kindConfig": {
-    "title": "SHU Design system",
-    "siteName": "SHU Design system",
+    "title": "SHU Design System Base",
+    "siteName": "SHU Design System Base",
     "adminEmail": "dev@madebykind.com",
     "ports": {
       "assets": 8923,
