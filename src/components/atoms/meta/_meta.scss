@@ -6,9 +6,9 @@
   display: block;
   padding-bottom: spacing(base);
   font-size: ms(0, $thread: small);
-  font-weight: bold;
-  letter-spacing: rem-calc(3);
-  line-height: 1.44;
+  font-weight: 700;
+  letter-spacing: 3.14px;
+  line-height: 1.2;
   text-transform: uppercase;
 
   // Color any element within the meta-title
