@@ -3,17 +3,15 @@
 // ==========================================================================
 @import "../close/_close";
 
-
 .pill {
   position: relative;
   padding: spacing(5 10 5 12);
   margin-bottom: spacing(5);
   border-radius: rem-calc(5);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 5px;
+  font-size: ms(0, $thread: small);
+  font-weight: 500;
+  letter-spacing: 0.6px;
   line-height: 1.2;
-  text-align: center;
   text-transform: uppercase;
 
   @include link() {
@@ -28,7 +26,6 @@
 a.pill,
 button.pill {
   @include link() {
-    font-weight: 700;
   }
   // @TODO only work when a or button
   @include link-hover {
@@ -51,8 +48,8 @@ button.pill--secondary {
 
 .pill--grey {
   @include link() {
-    background: tint(palette("grey"), "darken");
-    color: black;
+    background: palette("grey-mid");
+    color: palette("dark-grey");
   }
 }
 
