@@ -38,6 +38,8 @@ $positions: (
 
         /* start reset pad */
         .#{$prefix}#{$positionSelector}--reset {
+            #{$property}: 0 !important;
+
             @include breakpoint-loop() {
                 #{$property}: 0 !important;  // sass-lint:disable-line no-important
             }
