@@ -63,6 +63,18 @@ ul {
   @include list-unstyled();
 }
 
+.list--inline {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: -0.5em;
+  overflow: hidden;
+
+  > li {
+    margin-bottom: 0.25em;
+  }
+}
+
 .list--inset {
   padding-left: spacing(15);
 }
