@@ -2,17 +2,27 @@ title: "Pill"
 status: "ready"
 
 context:
-  pill:
-    message: Pill Example
+  pills:
+    - message: Pill Example
+    - message: Example item with a lot more text
+    - message: Meta item
 
 variants:
-  -
-    name: Secondary
+  - name: Secondary
     context:
-      pill:
-        modifier: pill--secondary
-  -
-    name: Grey
+      pills:
+        - message: Pill Example
+          modifier: pill--secondary
+        - message: Example item with a lot more text
+          modifier: pill--secondary
+        - message: Secondary meta
+          modifier: pill--secondary
+  - name: Grey
     context:
-      pill:
-        modifier: pill--grey
+      pills:
+        - message: Pill Example
+          modifier: pill--grey
+        - message: Example item with a lot more text
+          modifier: pill--grey
+        - message: Grey meta
+          modifier: pill--grey
