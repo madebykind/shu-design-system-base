@@ -8,23 +8,23 @@
   border-radius: rem-calc(3);
   font-family: $font-sans;
   font-size: ms(1, $thread: small);
-  font-weight: 700;
   line-height: 1.2;
   text-align: center;
   transition: all ease 150ms;
   vertical-align: middle;
 
   @include link() {
-    border: rem-calc(2) solid palette("black");
     background: none;
     background-color: transparent;
-    color: palette("black");
+    border: rem-calc(2) solid palette("primary");
+    color: palette("primary");
+    font-weight: 700;
     text-decoration: none;
   }
 
   @include link-hover() {
-    border: rem-calc(2) solid palette("primary");
-    color: palette("primary");
+    border: rem-calc(2) solid palette("secondary");
+    color: palette("secondary");
   }
 }
 
@@ -47,9 +47,8 @@ button {
   }
 
   @include link-hover() {
-    border: rem-calc(2) solid tint(palette("primary"), "darken");
-    background: tint(palette("primary"), "darken");
-    color: white;
+    border: rem-calc(2) solid palette("secondary");
+    background: palette("secondary");
   }
 }
 
@@ -67,7 +66,7 @@ button {
   }
 
   @include link-hover() {
-    background: rgba(255, 255, 255, 0);
+    background: palette("primary");
     color: palette("white") !important;
   }
 }
