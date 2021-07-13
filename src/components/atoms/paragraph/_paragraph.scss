@@ -5,5 +5,9 @@
 p {
   // All paragraphs have margin set in em
   margin: 0 0 1em 0;
-  font-size: ms(1, $thread: small);
+  font-size: ms(0);
+
+  @include respond-to(medium) {
+    font-size: ms(1, $thread: small);
+  }
 }
