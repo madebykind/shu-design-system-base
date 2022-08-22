@@ -55,14 +55,11 @@
 }
 
 .meta--grey {
-  &,
-  & > a {
-    color: tint(palette("grey"), "darken", 5);
-  }
+  color: $color-dove-grey;
 
   > a {
     @include link() {
-      color: tint(palette("grey"), "darken", 5);
+      color: $color-dove-grey;
     }
 
     @include link-hover() {
