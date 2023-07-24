@@ -43,7 +43,7 @@ button {
   @include link() {
     border: rem-calc(2) solid palette("primary");
     background: palette("primary");
-    color: white;
+    color: white !important;
   }
 
   @include link-hover() {
